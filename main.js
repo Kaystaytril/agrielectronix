@@ -8,7 +8,6 @@ let lastY = 0;
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   const y = window.scrollY;
-  if (document.body.classList.contains('nav-open')) return;
   if (y > 140 && y > lastY) header.classList.add('hide');
   else header.classList.remove('hide');
   lastY = y;

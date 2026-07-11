@@ -34,7 +34,8 @@ header{
   position:fixed;inset:0 0 auto 0;z-index:50;
   display:flex;align-items:center;justify-content:space-between;
   padding:14px var(--pad);
-  background:rgba(253,251,245,.97);
+  background:linear-gradient(rgba(253,251,245,.94),rgba(253,251,245,.8));
+  backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
   transition:transform .4s ease;
 }
@@ -266,13 +267,4 @@ footer{padding:64px var(--pad) 40px;border-top:1px solid var(--line);margin-top:
   .sun-disc{opacity:1;transform:translateX(-50%) translateY(38%)}
   .hero .mono,.hero h1,.hero p,.hero-cta{opacity:1;animation:none}
   .reveal{opacity:1;transform:none}
-}
-
-/* ---------- mobile nav fixes ---------- */
-body.nav-open{overflow:hidden}
-body.nav-open header{transform:none !important;background:transparent;border-color:transparent}
-body.nav-open .wa-float{display:none}
-@media (max-width:900px){
-  nav{z-index:58;background:rgba(253,251,245,.99)}
-  .burger{z-index:59}
 }
